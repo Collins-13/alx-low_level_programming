@@ -11,7 +11,7 @@ void print_numbers(void)
 
 	for (c = '0'; c <= '9'; c++)
 	{
-		printf(c);
+		_putchar(c);
 	}
-	printf('\n');
+	_putchar('\n');
 }
