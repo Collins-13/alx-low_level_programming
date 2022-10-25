@@ -2,16 +2,15 @@
 
 /**
  * rev_string - a function that reverses a string.
- * @s: char to check
+ * @s: input
  * Return: string in reverse
  */
 
 void rev_string(char *s)
-
 {
 	char rv = s[0];
 
-	int c - 0;
+	int c = 0;
 	int i;
 
 	while (s[c] != '\0')
