@@ -2,15 +2,15 @@
 
 /**
  * _strcat - a function that concatenates two strings.
- * @dest: char to
- * @src: char from
+ * @dest: copy to
+ * @src: copy from
  * Return: pointer to dest
  */
 
 char *_strcat(char *dest, char *src)
 {
 	int i;
-	unt j;
+	int j;
 
 	i = 0;
 	while (dest[i] != '\0')
