@@ -1,4 +1,4 @@
-##include "main.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -18,9 +18,9 @@ void print_line(char *c, int s, int l)
 		if (j <= s)
 			printf("%02x", c[l * 10 + j]);
 		else
-			printf("  ");
+			printf(" ");
 		if (j % 2)
-			putchar('  ');
+			putchar(' ');
 	}
 	for (k = 0; k <= s; k++)
 	{
@@ -38,7 +38,7 @@ void print_line(char *c, int s, int l)
  * Return: void
  */
 
-void print_buffer(char *b, int size);
+void print_buffer(char *b, int size)
 {
 	int i;
 
