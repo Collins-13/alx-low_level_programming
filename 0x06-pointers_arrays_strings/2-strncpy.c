@@ -4,7 +4,7 @@
  * _strncpy - a function that copies a string.
  * @src: The source of strings
  * @dest: The destination of the string
- * @n: The length of int
+ * @n: number of char to be copied
  * Return: pointer to the resulting string dest
  */
 
@@ -12,13 +12,16 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
 
-	for (i = 0; i < n && *(src + i); i++)
+	j = 0;
+	while (j < n && src[j] != '\0')
 	{
-		*(dest + i) = *(src + i);
+		dest[j] = src[j];
 	}
-	for (; i < n; i++)
+	while (j < n)
 	{
-		*(dest + i) = '\0'
+		dest[j] = '\0';
+		j++;
 	}
+
 	return (dest);
 }
