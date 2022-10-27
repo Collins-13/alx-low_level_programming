@@ -4,7 +4,7 @@
  * _strncat - a function that concatenates two strings.
  * @src: The source of strings
  * @dest: The destination of the string
- * @n: The length of int
+ * @n: The number of char to be copied
  * Return: pointer to the resulting string dest
  */
 
@@ -13,13 +13,13 @@ char *_strcat(char *dest, char *src, int n)
 	int i, j;
 
 	for (i = 0; dest[i] != '\0'; i++)
+	j = 0;
+	while (j < n && src[j] != '\0')
 	{
-		continue;
+		dest[i] = src[j]
+		i++;
+		j++;
 	}
-	for (j = 0; src[j] != '\0' && j < n; j++)
-	{
-		dest[i + j] = src[j];
-	}
-	dest[i + j] = '\0'
-		return (dest);
+	dest[i] = '\0';
+	return (dest);
 }
