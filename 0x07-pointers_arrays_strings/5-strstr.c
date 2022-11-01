@@ -7,7 +7,7 @@
  * Return: a pointer of substring or @NULL if not found.
  */
 
-char *_strstr(char *haystack, char *needle);
+char *_strstr(char *haystack, char *needle)
 {
 	unsigned int i = 0, j = 0;
 
