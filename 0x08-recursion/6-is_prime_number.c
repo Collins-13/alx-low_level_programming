@@ -12,7 +12,7 @@ int is_prime_number(int n);
  * Returnn: if the number is divisible - 0 otherwise - 1
  */
 
-int is_divisible(int nu, int div)
+int is_divisible(int num, int div)
 {
 	if (num % div == 0)
 		return (0);
