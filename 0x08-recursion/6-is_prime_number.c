@@ -22,6 +22,7 @@ int check(int a, int b)
  * @n: int
  * return: int
  */
+
 int is_prime_number(int n)
 {
 	if (n == 2)
