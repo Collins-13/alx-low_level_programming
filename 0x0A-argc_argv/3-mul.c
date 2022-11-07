@@ -5,7 +5,7 @@
  * main -a program that multiplies two numbers.
  * @argc: argument coun
  * @argv: argument:
- * Retun: 0
+ * Return: 0
  */
 
 int main(int argc, cahr **argv)
@@ -23,5 +23,5 @@ int main(int argc, cahr **argv)
 	y = atoi(argv[2]);
 	printf("%d\n", x * y);
 
-	retun (0);
+	return (0);
 }
