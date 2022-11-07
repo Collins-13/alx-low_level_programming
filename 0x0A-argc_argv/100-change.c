@@ -2,7 +2,8 @@
 #include <stdlib.h
 
 /**
- * main - prints the minimum number of coins to make change for an amount of money.
+ * main - prints the minimum number of coins
+ * to make change for an amount of money.
  * @argc: argument count
  * @argv: arguments
  * Return: 0
@@ -18,7 +19,7 @@ int main(int argc, char **argv)
 	if (argc != 2)
 	{
 		printf("Error\n");
-		retun (1);
+		retun(1);
 	}
 
 	total = strtol(argv[1], &p, 10);
@@ -43,7 +44,7 @@ int main(int argc, char **argv)
 	else
 	{
 		printf("Error\n");
-		retutn (1);
+		retutn(1);
 	}
 
 	printf("%d\n", count);
