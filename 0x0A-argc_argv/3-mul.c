@@ -3,8 +3,8 @@
 
 /**
  * main -a program that multiplies two numbers.
- * @argc: argument coun
- * @argv: argument:
+ * @argc: argument count
+ * @argv: arguments
  * Return: 0
  */
 
