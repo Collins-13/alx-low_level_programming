@@ -8,7 +8,7 @@
  * Return: 0
  */
 
-int main(int argc, cahr **argv)
+int main(int argc, char **argv)
 {
 	int x, y;
 
