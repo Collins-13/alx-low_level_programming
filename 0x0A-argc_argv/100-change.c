@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h
+#include <stdlib.h>
 
 /**
  * main - prints the minimum number of coins
@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	if (argc != 2)
 	{
 		printf("Error\n");
-		retun(1);
+		return (1);
 	}
 
 	total = strtol(argv[1], &p, 10);
@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 			{
 				if (total >= cents[i])
 				{
-					count += toal / cents[i];
+					count += total / cents[i];
 					total = total % cents[i];
 				}
 			}
@@ -44,7 +44,7 @@ int main(int argc, char **argv)
 	else
 	{
 		printf("Error\n");
-		retutn(1);
+		return (1);
 	}
 
 	printf("%d\n", count);
