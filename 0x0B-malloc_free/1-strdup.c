@@ -8,7 +8,7 @@
  * it returns NULL if insufficient memory was available
  */
 
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	char *copy;
 	int 1, len = 0;
