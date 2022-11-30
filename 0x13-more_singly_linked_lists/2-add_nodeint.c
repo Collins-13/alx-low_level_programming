@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * add_nodelist - add node at beginning of a listint_t list.
+ * add_nodeint - add node at beginning of a listint_t list.
  *
  * @head: head of double pointer
  * @n: int add the list
@@ -17,7 +17,7 @@ listint_t *add_nodeint(listint_t **head, const int n)
 			return (NULL);
 	ptr = malloc(sizeof(listint_t));
 	if (ptr == NULL)
-		return (NUL);
+		return (NULL);
 	ptr->n = n;
 	ptr->next = *head;
 	*head = ptr;
