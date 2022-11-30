@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * insert_node_at_index - inserting a new node at a given position
+ * insert_nodeint_at_index - inserting a new node at a given position
  * @head: double pointer
  * @idx: index of the node
  * @n: new node value
@@ -25,7 +25,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			temp = temp->next;
 		}
 		if (temp == NULL)
-			return (NUL);
+			return (NULL);
 	}
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
