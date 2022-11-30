@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * print_listint - prints all the elements of listint_t list.
+ * print_listint - prints all the elements of linked list.
  *
- * @h: head of linklist node
+ * @h: head of linked list
  *
- * Rteurn: the number of nodes
+ * Return: the number of nodes
  *
  */
 
