@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free-listint - frees a listint_t list
+ * free_listint - frees a listint_t list
  *
  * @head: the head of the list
  *
