@@ -24,6 +24,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		j <<= 1;
 		if (b[i] == '1')
-			j += 1; }
+			j += 1;
+	}
 	return (j);
 }
