@@ -3,7 +3,7 @@
 /**
  * flip_bits - flip to get from one number to another
  * @n: the first number
- * @n: the second number
+ * @m: the second number
  * Return: the number of bits you would need to flip
  */
 
