@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -7,25 +8,22 @@
 
 int main(void)
 {
-	int ones = '0';
-	int tens = '0';
+	int digit1, digit2;
 
-	for (tens = '0'; tens <= '9'; tens++)/* prints tens digit*/
-	(
-		for (ones = '0'; ones <= '9'; ones++)/* prints ones digit*/
-		(
-			if (!((ones == tens) || (tens > ones)))/*elinates repitition*/
-			(
-				putchar(tens);
-				putchar(ones);
-				if (!(ones == '9' && tens == '0'))/*adds comma and space*/
-				(
-					putchar(',');
-					putchar(' ')
-				)
-			)
-		)
-	)
-	putchar('\n')
-		return (0);
+	for (digit1 = 0; digit1 < 9; digit1++)
+	{
+		for (digt2 = digit1 + 1; digit2 < 10; digit2++)
+		{
+			putchar((digit1 % 10) + '0');
+			putchar((digit2 % 10) + '0');
+
+			if (digit1 == 8 && digit2 == 9)
+				continue;
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+
+	return (0);
 }
